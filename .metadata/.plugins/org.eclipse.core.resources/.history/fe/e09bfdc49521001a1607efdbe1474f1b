@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_9BsO0AnGEeqmNKqZ-e0HNA" label="GLOBALBI_POC" description="" language="java" technicalLabel="GLOBALBI_POC" local="true" author="_9BsO0QnGEeqmNKqZ-e0HNA" productVersion="Talend Cloud Real-Time Big Data Platform-7.2.1.20190909_1035-patch" itemsRelationVersion="1.3">
+    <componentsSettings xmi:id="_5dX2cBG8EeqeKc0fNhDLuw" name="DI|tCouchDBConnection" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dX2cRG8EeqeKc0fNhDLuw" name="DI|tUniservBTGeneric" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dX2chG8EeqeKc0fNhDLuw" name="DI|tMemSQLInput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dX2cxG8EeqeKc0fNhDLuw" name="DI|tPigJoin" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dX2dBG8EeqeKc0fNhDLuw" name="DI|tArray" family="Technical"/>
+    <componentsSettings xmi:id="_5dX2dRG8EeqeKc0fNhDLuw" name="DI|tPigFilterColumns" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dYdgBG8EeqeKc0fNhDLuw" name="DI|tSugarCRMInput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dYdgRG8EeqeKc0fNhDLuw" name="DI|tSasOutput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dYdghG8EeqeKc0fNhDLuw" name="DI|tPigLoad" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZEkBG8EeqeKc0fNhDLuw" name="DI|tOleDbOutput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZEkRG8EeqeKc0fNhDLuw" name="DI|tSageX3Input" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZEkhG8EeqeKc0fNhDLuw" name="DI|tUniservRTMailSearch" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZEkxG8EeqeKc0fNhDLuw" name="DI|tHashOutput" family="Technical"/>
+    <componentsSettings xmi:id="_5dZElBG8EeqeKc0fNhDLuw" name="DI|tQASAddressVerified" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZElRG8EeqeKc0fNhDLuw" name="DI|tCouchDBInput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZElhG8EeqeKc0fNhDLuw" name="DI|tPigSort" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZElxG8EeqeKc0fNhDLuw" name="DI|tUniservRTMailBulk" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZEmBG8EeqeKc0fNhDLuw" name="DI|tCentricCRMInput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZEmRG8EeqeKc0fNhDLuw" name="DI|tMemSQLConnection" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZEmhG8EeqeKc0fNhDLuw" name="DI|tMemSQLOutput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZEmxG8EeqeKc0fNhDLuw" name="DI|tMSAXOutput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZroBG8EeqeKc0fNhDLuw" name="DI|tUniservRTPost" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZroRG8EeqeKc0fNhDLuw" name="DI|tPigAggregate" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZrohG8EeqeKc0fNhDLuw" name="DI|tCouchDBClose" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZroxG8EeqeKc0fNhDLuw" name="DI|tSageX3Output" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZrpBG8EeqeKc0fNhDLuw" name="DI|tSugarCRMOutput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dZrpRG8EeqeKc0fNhDLuw" name="DI|tSPSSInput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5daSsBG8EeqeKc0fNhDLuw" name="DI|tPigReplicate" family="Deprecated"/>
+    <componentsSettings xmi:id="_5da5wBG8EeqeKc0fNhDLuw" name="DI|CouchbaseInput" family="Databases/Couchbase"/>
+    <componentsSettings xmi:id="_5da5wRG8EeqeKc0fNhDLuw" name="DI|tPigFilterRow" family="Deprecated"/>
+    <componentsSettings xmi:id="_5da5whG8EeqeKc0fNhDLuw" name="DI|tPigCoGroup" family="Deprecated"/>
+    <componentsSettings xmi:id="_5da5wxG8EeqeKc0fNhDLuw" name="DI|tMSAXInput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dbg0BG8EeqeKc0fNhDLuw" name="DI|tSAPIDocInput" family="Business/SAP"/>
+    <componentsSettings xmi:id="_5dbg0RG8EeqeKc0fNhDLuw" name="DI|tPigMap" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dbg0hG8EeqeKc0fNhDLuw" name="DI|tSAPHanaUnload" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_5dbg0xG8EeqeKc0fNhDLuw" name="DI|CouchbaseOutput" family="Databases/Couchbase"/>
+    <componentsSettings xmi:id="_5dbg1BG8EeqeKc0fNhDLuw" name="DI|tCouchDBOutput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dbg1RG8EeqeKc0fNhDLuw" name="DI|tBlockedFuzzyJoin" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dcH4BG8EeqeKc0fNhDLuw" name="DI|tHashInput" family="Technical"/>
+    <componentsSettings xmi:id="_5dcH4RG8EeqeKc0fNhDLuw" name="DI|tAccessBulkExec" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_5dcu8BG8EeqeKc0fNhDLuw" name="DI|tCentricCRMOutput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dcu8RG8EeqeKc0fNhDLuw" name="DI|tPigDistinct" family="Deprecated"/>
+    <componentsSettings xmi:id="_5ddWABG8EeqeKc0fNhDLuw" name="DI|tQASAddressUnknown" family="Deprecated"/>
+    <componentsSettings xmi:id="_5ddWARG8EeqeKc0fNhDLuw" name="DI|tOleDbInput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dd9EBG8EeqeKc0fNhDLuw" name="DI|tPigCode" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dd9ERG8EeqeKc0fNhDLuw" name="DI|tFuzzyJoin" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dd9EhG8EeqeKc0fNhDLuw" name="DI|tOleDbRow" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dekIBG8EeqeKc0fNhDLuw" name="DI|tUniservRTConvertName" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfLMBG8EeqeKc0fNhDLuw" name="DI|tSPSSProperties" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfLMRG8EeqeKc0fNhDLuw" name="DI|tSasInput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfyQBG8EeqeKc0fNhDLuw" name="DI|tPigStoreResult" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfyQRG8EeqeKc0fNhDLuw" name="DI|tSPSSOutput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfyQhG8EeqeKc0fNhDLuw" name="DI|tAccessOutputBulkExec" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_5dfyQxG8EeqeKc0fNhDLuw" name="DI|tMemSQLClose" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfyRBG8EeqeKc0fNhDLuw" name="DI|tQASAddressIncomplete" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfyRRG8EeqeKc0fNhDLuw" name="DI|tSAPBWInput" family="Business/SAP"/>
+    <componentsSettings xmi:id="_5dfyRhG8EeqeKc0fNhDLuw" name="DI|tPigCross" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfyRxG8EeqeKc0fNhDLuw" name="DI|tSPSSStructure" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfySBG8EeqeKc0fNhDLuw" name="DI|tUniservRTMailOutput" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfySRG8EeqeKc0fNhDLuw" name="DI|tMemSQLRow" family="Deprecated"/>
+    <componentsSettings xmi:id="_5dfyShG8EeqeKc0fNhDLuw" name="DI|tArrayIn" family="Technical"/>
+    <migrationTask xmi:id="_9f4msAnGEeqmNKqZ-e0HNA" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_9BsO0QnGEeqmNKqZ-e0HNA" login="parag.dosi@mail.nissan.co.jp" password="D41D8CD98F00B204E9800998ECF8427E" authenticationInfo=":"/>
+  <TalendProperties:User xmi:id="_oGgrQBpiEeq42cGOP1WYCw" login="mansoorahmed.shaik@mail.nissan.co.jp" password="D41D8CD98F00B204E9800998ECF8427E" authenticationInfo=":"/>
+  <TalendProperties:User xmi:id="_-gNw0BplEeqMhpNWvFAeBA" login="jobbuilder@talend.com"/>
+</xmi:XMI>

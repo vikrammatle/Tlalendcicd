@@ -1,0 +1,103 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              http://maven.apache.org/xsd/settings-1.0.0.xsd">   
+    <!-- /!\ Only needs to be defined if you use the local mode to build your artifacts, in that case the value corresponds to the <studio_path>/configuration/.m2/repository folder. 
+	Otherwise, if you use the the -Dupdatesite.path parameter at build time, the M2_HOME variable value will be used -->
+    <localRepository>/mnt/c/Talendlocal/Talend-Studio-20190620_1446-V7.2.1/configuration/.m2/repository</localRepository>
+    <servers>
+	    <!-- /!\ FOR CLOUD USERS ONLY: credentials to access your Talend Cloud account -->
+		<server>
+			<username>mansoorahmed.shaik@mail.nissan.co.jp</username>
+			<password>Ovilve@007</password>
+			<id>https://tmc.ap.cloud.talend.com/inventory/</id>
+    </server>
+        <!-- credentials to access the default Nexus releases/snapshots repository -->
+        <server>
+            <id>releases</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+        <server>
+            <id>snapshots</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+        <!-- credentials to access the Nexus shared libraries repository -->
+        <server>
+            <id>talend-custom-libs-release</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+        <server>
+            <id>talend-custom-libs-snapshot</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+        <!-- credentials to access the maven plugins -->
+        <server>            <!-- central (as proxy) -->
+            <id>central</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+    </servers>   
+    <profiles>
+        <profile>
+            <id>talend-ci</id>
+            <repositories>
+                <repository>
+                    <id>talend-custom-libs-release</id>
+                    <name>talend-custom-libs-release</name>
+                    <url>http://192.168.43.117:8081/repository/talend-custom-libs-release/</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+                    <layout>default</layout>
+                </repository>
+                <repository>
+                    <id>talend-custom-libs-snapshot</id>
+                    <name>talend-custom-libs-snapshot</name>
+                    <url>http://192.168.43.117:8081/repository/talend-custom-libs-snapshot/</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+                    <layout>default</layout>
+                </repository>
+				<repository>
+                    <id>central</id>
+                    <name>central</name>
+                    <url>http://192.168.43.117:8081/repository/maven-central/</url>
+                    <layout>default</layout>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>plugins_snapshot</id>
+                    <name>plugins_snapshot</name>
+		    <url>http://192.168.43.117:8081/repository/talend-custom-libs-snapshot/</url>
+                    <layout>default</layout>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>plugins_release</id>
+                    <name>plugins_release</name>
+                    <url>http://192.168.43.117:8081/repository/talend-custom-libs-release/</url>
+                    <layout>default</layout>
+                </pluginRepository>
+				<pluginRepository>
+                    <id>central</id>
+                    <name>central</name>
+                    <url>http://192.168.43.117:8081/repository/maven-central/</url>
+                    <layout>default</layout>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>        
+    </profiles>
+    <activeProfiles>
+        <activeProfile>talend-ci</activeProfile>
+    </activeProfiles>
+</settings>

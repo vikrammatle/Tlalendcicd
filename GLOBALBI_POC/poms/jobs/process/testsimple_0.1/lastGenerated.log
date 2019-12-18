@@ -1,0 +1,45 @@
+[INFO] Disabling enhanced local repository: using legacy is strongly discouraged to ensure build reproducibility.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< org.example.globalbi_poc.job:TestSimple >---------------
+[INFO] Building GLOBALBI_POC TestSimple-0.1.0 (0.1,Job Designs) 0.1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- builder-maven-plugin:7.2.1:generate (default) @ TestSimple ---
+[INFO] Skipping ci-builder
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ TestSimple ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ TestSimple ---
+[WARNING] The POM for org.eclipse.platform:org.eclipse.osgi:jar:3.13.300 is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-exec:jar:1.2 is missing, no dependency information available
+[INFO] Not compiling main sources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ TestSimple ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ TestSimple ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ TestSimple ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ TestSimple ---
+[INFO] Building jar: C:\Talendlocal\Talend-Studio-20190620_1446-V7.2.1\workspace\GLOBALBI_POC\poms\jobs\process\testsimple_0.1\target\testsimple_0_1.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:3.0.0:single (default) @ TestSimple ---
+[INFO] Reading assembly descriptor: C:\Talendlocal\Talend-Studio-20190620_1446-V7.2.1\workspace\GLOBALBI_POC\poms\jobs\process\testsimple_0.1/src/main/assemblies/assembly.xml
+[WARNING] The POM for org.apache.felix:maven-bundle-plugin:jar:2.1.0 is missing, no dependency information available
+[INFO] Building zip: C:\Talendlocal\Talend-Studio-20190620_1446-V7.2.1\workspace\GLOBALBI_POC\poms\jobs\process\testsimple_0.1\target\testsimple_0_1.zip
+[INFO] 
+[INFO] --- signer-maven-plugin:7.2.1:sign (sign) @ TestSimple ---
+[INFO] Start to sign the job artifact
+[INFO] Start to sign artifact, the source file is testsimple_0_1.zip and target file is testsimple_0_1_sign_.zip
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.154 s
+[INFO] Finished at: 2019-12-09T14:40:55+05:30
+[INFO] ------------------------------------------------------------------------
