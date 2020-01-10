@@ -41,7 +41,8 @@ node {
                         // Run the maven build
                         sh "mvn -s /opt/settings.xml -f $PROJECT_GIT_NAME/poms/pom.xml clean deploy"
                     
-                        }    
+                        }  
+        }
          stage ('Package Jobs as Container') {
                     withMaven(
                             // Maven installation declared in the Jenkins "Global Tool Configuration"
