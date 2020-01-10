@@ -39,7 +39,7 @@ node {
                             {
                     
                         // Run the maven build
-                        sh "mvn -s /opt/settings.xml -f $PROJECT_GIT_NAME/poms/pom.xml clean deploy -fn -e -pl jobs/process${TYPE}/${JOB}_${VERSION} -am"
+                        sh "mvn -s /opt/settings.xml -f $PROJECT_GIT_NAME/poms/pom.xml clean deploy"
                     
                         }    
         }
