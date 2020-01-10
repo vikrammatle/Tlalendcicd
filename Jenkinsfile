@@ -2,7 +2,7 @@ env.PROJECT_GIT_NAME = 'GLOBALBI_POC'
 env.PROJECT_NAME = env.PROJECT_GIT_NAME.toLowerCase()
 env.JOB = 'test'
 env.VERSION = '0.1'
-env.GIT_URL = 'https://github.com/tgourdel/talend-pipeline-job.git'
+env.GIT_URL = 'https://github.com/vikrammatle/Tlalendcicd.git'
 env.TYPE = "" // if big data = _mr
 env.DOCKERHUB_USER = "talendinc"
 
