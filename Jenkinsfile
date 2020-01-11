@@ -37,7 +37,7 @@ node {
                             // Maven settings.xml file defined with the Jenkins Config File Provider Plugin
                             // Maven settings and global settings can also be defined in Jenkins Global Tools Configuration
                            // mavenSettingsConfig: 'maven-file',
-                            mavenOpts: '-Dupdatesite.path=http://13.233.125.1:8082/P2/ -Dlicense.path=/opt/remote.license -Dgeneration.type=local  -DaltDeploymentRepository=id::default::http://admin:admin123@13.234.19.248:8081/repository/thirdparty/ -Xms1024m -Xmx3096m') 
+                            mavenOpts: '-Dupdatesite.path=http://13.233.125.1:8082/P2/ -Dlicense.path=/opt/remote.license -Dgeneration.type=local  -DaltDeploymentRepository=id::default::http://admin:admin123@13.234.19.248:8081/repository/talend-custom-libs-release/ -Xms1024m -Xmx3096m') 
                             {
                     
                         // Run the maven build
