@@ -6,7 +6,7 @@ env.GIT_URL = 'https://github.com/vikrammatle/Tlalendcicd.git'
 env.TYPE = "" // if big data = _mr
 env.DOCKERHUB_USER = "talendinc"
 env.imageName= 'talendimage'
-env.registry=https://464598779341.dkr.ecr.ap-south-1.amazonaws.com
+env.registry='http://464598779341.dkr.ecr.ap-south-1.amazonaws.com'
 
 
 // Credentials IDs (Manage Jenkins => Credentials)
