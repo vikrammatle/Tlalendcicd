@@ -46,22 +46,16 @@ node {
                         }  
         }
          stage ('building the docker image') {
-                    steps {
-                title "Build and tag the DOcker Image"
-                script {
+               {
                     sh "pwd"
                     sh "ls -l"
                     dir("./GLOBALBI_POC") {
                     docker.build(imageName, "-f DockerFile .")
                     }
-                    
-                }
             }
         }
       	
-        
-
-
+  
     } catch (err) {
         currentBuild.result = 'FAILED'
         throw err
