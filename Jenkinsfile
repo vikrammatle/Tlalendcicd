@@ -57,7 +57,6 @@ node {
         }
       	stage("Push to Registry") {
                 script {
-                    title "Push the Docker image to the registry"
                     sh "eval \$(/var/lib/jenkins/bin/aws ecr get-login --region ap-south-1 --no-include-email)"
                     sh "/var/lib/jenkins/bin/aws ecr describe-repositories --region ap-south-1 --repository-names $imageName || /var/lib/jenkins/bin/aws ecr create-repository --region ap-south-1 --repository-name $imageName"
                     docker.withRegistry(registry) {
