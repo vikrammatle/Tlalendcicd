@@ -57,8 +57,8 @@ node {
         }
       	stage("Push to Registry") {
                 script {
-                    sh "eval \$(/var/lib/jenkins/bin/aws ecr get-login --region ap-south-1 --no-include-email)"
-                    sh "/var/lib/jenkins/bin/aws ecr describe-repositories --region ap-south-1 --repository-names $imageName || /var/lib/jenkins/bin/aws ecr create-repository --region ap-south-1 --repository-name $imageName"
+                    sh "eval \$(aws ecr get-login --region ap-south-1 --no-include-email)"
+                    sh "aws ecr describe-repositories --region ap-south-1 --repository-names $imageName || aws ecr create-repository --region ap-south-1 --repository-name $imageName"
                     docker.withRegistry(registry) {
                         docker.image(imageName).push('latest')
                     }
