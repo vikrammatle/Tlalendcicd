@@ -6,6 +6,7 @@ env.GIT_URL = 'https://github.com/vikrammatle/Tlalendcicd.git'
 env.TYPE = "" // if big data = _mr
 env.DOCKERHUB_USER = "talendinc"
 env.imageName= 'talendimage'
+env.registry=https://464598779341.dkr.ecr.ap-south-1.amazonaws.com
 
 
 // Credentials IDs (Manage Jenkins => Credentials)
@@ -54,7 +55,19 @@ node {
                     }
             }
         }
-      	
+      	stage("Push to Registry") {
+            steps {
+                script {
+                    title "Push the Docker image to the registry"
+                    sh "eval \$(/var/lib/jenkins/bin/aws ecr get-login --region ap-south-1 --no-include-email)"
+                    sh "/var/lib/jenkins/bin/aws ecr describe-repositories --region ap-south-1 --repository-names $imageName || /var/lib/jenkins/bin/aws ecr create-repository --region ap-south-1 --repository-name $imageName"
+                    docker.withRegistry(registry) {
+                        docker.image(imageName).push('latest')
+                    }
+                    //sh "/var/lib/jenkins/bin/aws ecr list-images --region $REGION --repository-name $imageName --filter tagStatus=UNTAGGED --query 'imageIds[*]' --output text | while read imageId; do /var/lib/jenkins/bin/aws ecr batch-delete-image --region $REGION --repository-name $imageName --image-ids imageDigest=\$imageId; done"
+                }
+            }
+        }
   
     } catch (err) {
         currentBuild.result = 'FAILED'
