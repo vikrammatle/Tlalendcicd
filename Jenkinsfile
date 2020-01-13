@@ -46,7 +46,7 @@ node {
                         }  
         }
          stage ('building the docker image') {
-               {
+               script{
                     sh "pwd"
                     sh "ls -l"
                     dir("./GLOBALBI_POC") {
